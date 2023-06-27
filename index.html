@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+</head>
+<body>
+    <div class="header">
+        <div class="title">
+            <h1>Temperature Converter</h1>
+            <span class="icon"><i class="fa-solid fa-temperature-three-quarters"></i>
+            </span>
+        </div>
+        <div class="container">
+            <form id="CalTemp" onsubmit="CalculateTemp(); return false">
+                <input type="number" name="Temp" id="Temp" value="0">
+                <select name="diff_temp" id="diff_temp">
+                    <option value="celsius">&#8451</option>
+                    <option value="fahrenheit">&#8457</option>
+                    <option value="kelvin">&#8490</option>
+                </select><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="submit" value="Convert" name="Temp" id="submit"><br>
+            </form>
+           <!-- <div id="result1"> 
+                <div></div> 
+            </div>
+            <div id="result2"> 
+                <div></div> 
+            </div> -->
+            <div class="bottom">
+                <div>
+                    <h2 id="resultcontainer"></h2>
+                </div>
+                <div>
+                    <h2 id="result2"></h2>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
